@@ -1,24 +1,10 @@
-import { StyleSheet, View, Text } from 'react-native';
-import BhaskaraCalculator from './src/bhaskara';
+import React from 'react';
+import Home from './src/screens';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Bhaskara Calculator - Resolva Logo Abaixo</Text>
-      <BhaskaraCalculator/>
-    </View>
+    <Home />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f5f5f5',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    textAlign: 'center'
-  }
-});
+
